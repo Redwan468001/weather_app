@@ -45,9 +45,9 @@ class _MyStateFullVisitState extends State<MyStateFullVisit> {
         builder: (context) {
           return Center(
             child: ElevatedButton(
-              child: const Text('Click me'),
+              child: const Text('Click me fast'),
               onPressed: () {
-                showModalBottomSheet(
+                showBottomSheet(
                   context: context,
                   builder: (context) {
                     return const Wrap(
@@ -59,10 +59,6 @@ class _MyStateFullVisitState extends State<MyStateFullVisit> {
                         ListTile(
                           leading: Icon(Icons.copy),
                           title: Text('Copy'),
-                        ),
-                        ListTile(
-                          leading: Icon(Icons.edit),
-                          title: Text('Edit'),
                         ),
                       ],
                     );

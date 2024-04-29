@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:weather_app/mystatelessvisit.dart';
+import 'package:weather_app/weather_app.dart';
+// import 'package:weather_app/mystatelessvisit.dart';
 
 void main() {
   runApp(const MyWeatherApp());
@@ -11,7 +12,9 @@ class MyWeatherApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MyStateFullVisit(),
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData.dark(useMaterial3: true),
+      home: const WeatherScreen(),
     );
   }
 }
