@@ -72,7 +72,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
             return Center(child: Text(snapshot.error.toString()));
           }
           final data = snapshot.data!;
-          final currentWeatherData = data['list'][0];
+          final currentWeatherData = data['list'][1];
           //Current weather data
           final currentTemp =
               (currentWeatherData['main']['temp'] - 273).toInt();
